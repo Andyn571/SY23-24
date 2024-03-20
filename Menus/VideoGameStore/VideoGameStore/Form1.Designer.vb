@@ -22,30 +22,93 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.StoreName = New System.Windows.Forms.Label()
+        Me.CartButton = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.OurConsolesImage = New System.Windows.Forms.PictureBox()
+        CType(Me.OurConsolesImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'StoreName
+        '
+        Me.StoreName.AutoSize = True
+        Me.StoreName.Font = New System.Drawing.Font("Goudy Stout", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StoreName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.StoreName.Location = New System.Drawing.Point(221, 26)
+        Me.StoreName.Name = "StoreName"
+        Me.StoreName.Size = New System.Drawing.Size(465, 39)
+        Me.StoreName.TabIndex = 0
+        Me.StoreName.Text = "Retro Consoles"
+        '
+        'CartButton
+        '
+        Me.CartButton.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.CartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.CartButton.Font = New System.Drawing.Font("Algerian", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CartButton.Location = New System.Drawing.Point(795, 12)
+        Me.CartButton.Name = "CartButton"
+        Me.CartButton.Size = New System.Drawing.Size(143, 53)
+        Me.CartButton.TabIndex = 1
+        Me.CartButton.Text = "Cart"
+        Me.CartButton.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TextBox1.Font = New System.Drawing.Font("Cooper Black", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TextBox1.Location = New System.Drawing.Point(27, 83)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(898, 95)
+        Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(168, 194)
+        Me.Label1.Font = New System.Drawing.Font("Goudy Stout", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(343, 209)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(280, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Our Consoles"
+        '
+        'OurConsolesImage
+        '
+        Me.OurConsolesImage.BackColor = System.Drawing.Color.White
+        Me.OurConsolesImage.Location = New System.Drawing.Point(27, 239)
+        Me.OurConsolesImage.Name = "OurConsolesImage"
+        Me.OurConsolesImage.Size = New System.Drawing.Size(898, 484)
+        Me.OurConsolesImage.TabIndex = 4
+        Me.OurConsolesImage.TabStop = False
+        Me.OurConsolesImage.Tag = ""
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.RosyBrown
+        Me.ClientSize = New System.Drawing.Size(950, 754)
+        Me.Controls.Add(Me.OurConsolesImage)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.CartButton)
+        Me.Controls.Add(Me.StoreName)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.OurConsolesImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents StoreName As Label
+    Friend WithEvents CartButton As Button
+    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents OurConsolesImage As PictureBox
 End Class
