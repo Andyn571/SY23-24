@@ -28,6 +28,9 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.OurConsolesImage = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.OurConsolesImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,12 +90,42 @@ Partial Class Form1
         Me.OurConsolesImage.TabStop = False
         Me.OurConsolesImage.Tag = ""
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(45, 668)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(216, 29)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(372, 668)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(216, 29)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(699, 668)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(216, 29)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.RosyBrown
         Me.ClientSize = New System.Drawing.Size(950, 754)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.OurConsolesImage)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
@@ -111,4 +144,7 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents OurConsolesImage As PictureBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
