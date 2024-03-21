@@ -96,7 +96,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(216, 29)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Playstation"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -105,7 +105,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(216, 29)
         Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Atari"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -114,7 +114,7 @@ Partial Class Form1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(216, 29)
         Me.Button3.TabIndex = 7
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "Gameboy"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
