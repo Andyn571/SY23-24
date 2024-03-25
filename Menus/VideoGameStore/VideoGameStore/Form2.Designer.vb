@@ -36,6 +36,8 @@ Partial Class Form2
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +68,7 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(2, 160)
+        Me.TextBox1.Location = New System.Drawing.Point(2, 169)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(556, 27)
         Me.TextBox1.TabIndex = 2
@@ -76,9 +78,9 @@ Partial Class Form2
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(220, 404)
+        Me.PictureBox2.Location = New System.Drawing.Point(782, 388)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(214, 180)
+        Me.PictureBox2.Size = New System.Drawing.Size(160, 144)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
@@ -86,7 +88,7 @@ Partial Class Form2
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(396, 186)
+        Me.PictureBox3.Location = New System.Drawing.Point(396, 202)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(206, 174)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -96,7 +98,7 @@ Partial Class Form2
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(608, 186)
+        Me.PictureBox4.Location = New System.Drawing.Point(608, 202)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(213, 174)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -106,7 +108,7 @@ Partial Class Form2
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(738, 404)
+        Me.PictureBox5.Location = New System.Drawing.Point(765, 1)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(177, 146)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -116,7 +118,7 @@ Partial Class Form2
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(175, 186)
+        Me.PictureBox6.Location = New System.Drawing.Point(175, 202)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(215, 174)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -126,7 +128,7 @@ Partial Class Form2
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(2, 186)
+        Me.PictureBox7.Location = New System.Drawing.Point(2, 202)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(167, 174)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -135,7 +137,7 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(2, 366)
+        Me.Button2.Location = New System.Drawing.Point(2, 388)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
         Me.Button2.TabIndex = 9
@@ -144,7 +146,7 @@ Partial Class Form2
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(175, 366)
+        Me.Button3.Location = New System.Drawing.Point(175, 382)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 29)
         Me.Button3.TabIndex = 10
@@ -153,7 +155,7 @@ Partial Class Form2
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(396, 366)
+        Me.Button4.Location = New System.Drawing.Point(396, 382)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(94, 29)
         Me.Button4.TabIndex = 11
@@ -162,18 +164,39 @@ Partial Class Form2
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(608, 366)
+        Me.Button5.Location = New System.Drawing.Point(608, 382)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(117, 29)
         Me.Button5.TabIndex = 12
         Me.Button5.Text = "Buy for $100"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(765, 153)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(94, 29)
+        Me.Button6.TabIndex = 13
+        Me.Button6.Text = "Buy for $20"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(782, 538)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(94, 29)
+        Me.Button7.TabIndex = 14
+        Me.Button7.Text = "Buy for $30"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGray
         Me.ClientSize = New System.Drawing.Size(940, 596)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -214,4 +237,6 @@ Partial Class Form2
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class
