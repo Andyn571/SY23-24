@@ -1,1 +1,1 @@
-Abcd
+Console Store is a game store where you can buy vintage consoles.
