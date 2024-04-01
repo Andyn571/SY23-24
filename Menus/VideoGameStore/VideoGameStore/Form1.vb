@@ -56,9 +56,7 @@ Public Class Form1
 
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
-        PictureBox2.Load(OpenFileDialog1.FileName)
-        PictureBox3.Load(OpenFileDialog1.FileName)
-        PictureBox4.Load(OpenFileDialog1.FileName)
+
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
@@ -117,6 +115,9 @@ Public Class Form1
     End Sub
     Public Sub ShowRecord(index As Integer)
         PictureBox1.Image = Nothing
+        PictureBox2.Image = Nothing
+        PictureBox3.Image = Nothing
+        PictureBox4.Image = Nothing
         If records(index) <> Nothing Then
             Dim Fields() As String
             Fields = records(index).Split("|")
@@ -133,13 +134,25 @@ Public Class Form1
             Field11.Text = Fields(10)
             Field12.Text = Fields(11)
             If File.Exists(Fields(11)) Then
-                PictureBox1.Load(Fields(11))
-                PictureBox2.Load(Fields(11))
-                PictureBox3.Load(Fields(11))
-                PictureBox4.Load(Fields(11))
+                PictureBox1.Load(Fields(12))
+                PictureBox2.Load(Fields(13))
+                PictureBox3.Load(Fields(14))
+                PictureBox4.Load(Fields(15))
             End If
         End If
     End Sub
 
+    Private Sub OpenFileDialog2_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog2.FileOk
+        PictureBox2.Load(OpenFileDialog2.FileName)
 
+    End Sub
+
+    Private Sub OpenFileDialog3_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog3.FileOk
+        PictureBox3.Load(OpenFileDialog3.FileName)
+
+    End Sub
+
+    Private Sub OpenFileDialog4_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog4.FileOk
+        PictureBox4.Load(OpenFileDialog4.FileName)
+    End Sub
 End Class
