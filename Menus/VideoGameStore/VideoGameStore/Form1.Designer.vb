@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.StoreName = New System.Windows.Forms.Label()
         Me.CartButton = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -149,9 +150,11 @@ Partial Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(121, 261)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(127, 110)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
@@ -160,6 +163,7 @@ Partial Class Form1
         Me.PictureBox2.Location = New System.Drawing.Point(364, 261)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(127, 110)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 9
         Me.PictureBox2.TabStop = False
         '
@@ -168,6 +172,7 @@ Partial Class Form1
         Me.PictureBox3.Location = New System.Drawing.Point(607, 261)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(127, 110)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 10
         Me.PictureBox3.TabStop = False
         '
@@ -176,6 +181,7 @@ Partial Class Form1
         Me.PictureBox4.Location = New System.Drawing.Point(850, 261)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(127, 110)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 11
         Me.PictureBox4.TabStop = False
         '
@@ -185,6 +191,7 @@ Partial Class Form1
         Me.Field1.Name = "Field1"
         Me.Field1.Size = New System.Drawing.Size(127, 27)
         Me.Field1.TabIndex = 12
+        Me.Field1.Text = "PS1"
         '
         'Field2
         '
@@ -213,6 +220,7 @@ Partial Class Form1
         Me.Field5.Name = "Field5"
         Me.Field5.Size = New System.Drawing.Size(127, 27)
         Me.Field5.TabIndex = 19
+        Me.Field5.Text = "$100"
         '
         'Field6
         '
