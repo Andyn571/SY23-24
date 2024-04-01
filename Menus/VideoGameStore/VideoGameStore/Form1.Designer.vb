@@ -98,6 +98,7 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(952, 95)
         Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
