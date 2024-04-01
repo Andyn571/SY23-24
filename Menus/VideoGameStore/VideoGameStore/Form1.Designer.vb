@@ -54,6 +54,9 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
+        Me.OpenFileDialog3 = New System.Windows.Forms.OpenFileDialog()
+        Me.OpenFileDialog4 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.OurConsolesImage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -322,6 +325,18 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'OpenFileDialog2
+        '
+        Me.OpenFileDialog2.FileName = "OpenFileDialog2"
+        '
+        'OpenFileDialog3
+        '
+        Me.OpenFileDialog3.FileName = "OpenFileDialog3"
+        '
+        'OpenFileDialog4
+        '
+        Me.OpenFileDialog4.FileName = "OpenFileDialog4"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -403,4 +418,7 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents OpenFileDialog2 As OpenFileDialog
+    Friend WithEvents OpenFileDialog3 As OpenFileDialog
+    Friend WithEvents OpenFileDialog4 As OpenFileDialog
 End Class

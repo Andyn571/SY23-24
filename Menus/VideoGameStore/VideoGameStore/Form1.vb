@@ -45,13 +45,13 @@ Public Class Form1
         OpenFileDialog1.ShowDialog()
     End Sub
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        OpenFileDialog1.ShowDialog()
+        OpenFileDialog2.ShowDialog()
     End Sub
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        OpenFileDialog1.ShowDialog()
+        OpenFileDialog3.ShowDialog()
     End Sub
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
-        OpenFileDialog1.ShowDialog()
+        OpenFileDialog4.ShowDialog()
     End Sub
 
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
