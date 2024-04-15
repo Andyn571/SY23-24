@@ -1,3 +1,23 @@
 ﻿body {
-    
+    background-color: mediumturquoise;
+    font-size: 18px;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+}
+
+h1 {
+    color: #003333;
+    font-family: 'Comic Sans MS';
+}
+
+h4 {
+    font-family: 'Times New Roman';
+}
+
+.Product {
+    height: 200px;
+    width: 200px;
 }
